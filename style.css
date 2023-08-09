@@ -1,0 +1,40 @@
+.main {
+    background: url('/backfround.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+body{
+    height: 110vh;
+}
+
+.home{
+
+    margin-top: -20px;
+    margin-left: 50px;
+}
+
+h1{
+    color: white;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item {
+    list-style-type: none;
+    margin-right: 5px;  /* Ajoutez une marge entre les éléments de la liste */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000; /* Ceci garantit que le header reste au-dessus des autres éléments */
+}
