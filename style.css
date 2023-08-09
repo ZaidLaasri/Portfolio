@@ -38,3 +38,13 @@ header {
     right: 0;
     z-index: 1000; /* Ceci garantit que le header reste au-dessus des autres éléments */
 }
+.logo{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.logoimg{
+    width: 70px;
+}
