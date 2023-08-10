@@ -32,13 +32,21 @@ h1{
     margin-right: 5px;  /* Ajoutez une marge entre les éléments de la liste */
 }
 
+.nav-link:hover {
+    color: pink !important;
+    text-decoration: underline;/* Ajoutez une marge entre les éléments de la liste */
+}
+
 header {
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1000; /* Ceci garantit que le header reste au-dessus des autres éléments */
 }
+
+
 .logo{
+    margin-top:0;
     position: fixed;
     top: 10px;
     left: 10px;
@@ -48,3 +56,46 @@ header {
 .logoimg{
     width: 70px;
 }
+
+.typewrite{
+    text-decoration: none;
+    color: deeppink;
+}
+
+
+.typewrite > .wrap {
+    border-right: 0.08em solid #fff;
+    animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #fff;
+    }
+}
+.aboutpic {
+    width: 500px;
+    height: 400px;
+    border: 2px solid black;
+
+}
+
+
+.About{
+   background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.About h1{
+    font: optional;
+}
+p{
+    color: white;
+}
+
