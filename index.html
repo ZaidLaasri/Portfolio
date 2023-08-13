@@ -17,35 +17,43 @@
 </head>
 
 <body>
-    <section class="main" id="main">
-        <div class="logo">
-            <img class="logoimg" src="z.png" alt="">
-        </div>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark">
 
-                <div class="container-fluid">
+    <section class="black-background">
+        <div id="myDiv" class="black-background" style="display: block;">
+            <h1>.</h1>
+            <div class="logo" style="">
+                <img class="logoimg" src="z.png" alt="">
+            </div>
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-dark" style="">
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#About">About Me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Contact</a>
-                            </li>
-                        </ul>
+                    <div class="container-fluid">
 
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#About">About Me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                                </li>
+                            </ul>
+
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </header>
+                </nav>
+            </header>
+        </div>
+    </section>
+   
+    <section class="main" id="main">
+        
 
         <div class="home">
             <h1>Hello, I'm Zaid !</h1>
@@ -82,10 +90,15 @@
     </section>
     <section class="About" id="About">
         <div class="row">
+
             <div class="col-6">
                 <div class="outset">
-                <img src="Zaid.png" class="img-fluid aboutpic" alt="..." style="border: 2px solid black;">
-            </div>
+                    <div class="card bg-dark" style="width: 40rem;">
+                        <div class="card-body">
+                            <img src="Zaid.png" class="img-fluid aboutpic" alt="..." style="border: 2px solid black;">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-6">
                 <div class="d-flex flex-column">
@@ -99,36 +112,76 @@
                         such as
                         creating the front-end of a restaurant website using Angular, which reinforced my passion for
                         information and communication technologies and my desire to work with experienced professionals.
-                        and my desire to work with experienced professionals.</p>
-                    <div class="d-flex">
-                        <nav class="navbar navbar-expand-lg navbar-dark">
+                        and my desire to work with experienced professionals.
+                    </p>
+                    <div class="card bg-dark" style="width: 40rem;">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <nav class="navbar navbar-expand-lg navbar-dark">
 
-                            <div class="container-fluid">
+                                    <div class="container-fluid">
 
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="#">Skills</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="#About">Education</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="#">Experience</a>
-                                        </li>
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page" href="#About"
+                                                        style="color: pink !important; text-decoration:underline;"
+                                                        id="skillsNav" onclick="opentab('skills')">Skills</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page" href="#About"
+                                                        id="educationNav" onclick="opentab('education')">Education</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page" href="#About"
+                                                        id="experienceNav"
+                                                        onclick="opentab('experience')">Experience</a>
+                                                </li>
 
-                                    </ul>
+                                            </ul>
 
-                                </div>
+                                        </div>
+                                    </div>
+                                </nav>
                             </div>
-                        </nav>
+                            <div id="skills">
+                                <ol>
+                                    <li>
+                                        <h4>Web app development </h4>
+                                        <p>I transforme your needs into a website.</p>
+                                    </li>
+
+                                    <li>
+                                        <h4>App development </h4>
+                                        <p>I build your Android app.</p>
+                                    </li>
+
+                                </ol>
+
+                            </div>
+                            <div id="education" style="display: none;">
+                                <h4>
+                                    Baccalaureate
+                                </h4>
+                                <p>Bac S - Graduated in 2019 - Honors- Lycée Othman Ben Affan (Casablanca).</p>
+                                <h4>
+                                    Miage engineering cycle
+                                </h4>
+                                <p>IT methods applied to business management - 2019/2025 - University of Côte d'Azur.
+                                </p>
+                                <p>Currently in my 4th year.</p>
+                            </div>
+                            <div id="experience" style="display: none;">
+                                <h4>Web Developper</h4>
+                                <p>I was hired as a web developer to orchestrate the migration of a desktop application to a web interface. In this role, I assumed responsibility for both the front-end and back-end aspects of the project. The application was designed to manage inventory and document interventions. I was also responsible for managing and optimizing the associated database.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>

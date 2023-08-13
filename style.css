@@ -1,5 +1,5 @@
 .main {
-    background: url('/backfround.jpg');
+     background: url('/backfround.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -51,10 +51,11 @@ header {
     top: 10px;
     left: 10px;
     z-index: 1000;
+    margin-left: 10px;
 }
 
 .logoimg{
-    width: 70px;
+    width: 60px;
 }
 
 .typewrite{
@@ -98,4 +99,24 @@ header {
 p{
     color: white;
 }
+
+h4{
+    color: deeppink;
+}
+
+
+.black-background {
+    background-color: black !important;
+    position: fixed;     /* Ceci fera en sorte que la section reste fixe */
+    top: 0;              /* Positionné en haut de la page */
+    left: 0;             /* Positionné à gauche */
+    width: 100%;         /* S'étend sur toute la largeur de la fenêtre */
+    z-index: 1000;       /* S'assurer qu'il reste au-dessus des autres éléments */
+}
+
+
+
+
+
+
 

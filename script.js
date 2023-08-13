@@ -56,3 +56,54 @@ TxtType.prototype.tick = function() {
         that.tick();
     }, delta);
 };
+
+
+function opentab(e){
+    if(e=='skills'){
+        debugger;
+        console.log(document.getElementById('skills'));
+        document.getElementById("skills").style.display="block";
+        document.getElementById('education').style.display="none";
+        document.getElementById('experience').style.display="none";
+
+        document.getElementById('skillsNav').style.color="pink";
+        document.getElementById('skillsNav').style.textDecoration="underline";
+
+
+        document.getElementById('educationNav').style.color="white";
+        document.getElementById('educationNav').style.textDecoration="none";
+
+        document.getElementById('experienceNav').style.color="white";
+        document.getElementById('experienceNav').style.textDecoration="none";
+    }else if(e=="education"){
+        document.getElementById('skills').style.display="none";
+        document.getElementById('education').style.display="block";
+        document.getElementById('experience').style.display="none";
+
+        document.getElementById('skillsNav').style.color="white";
+        document.getElementById('skillsNav').style.textDecoration="none";
+
+
+        document.getElementById('educationNav').style.color="pink";
+        document.getElementById('educationNav').style.textDecoration="underline";
+
+        document.getElementById('experienceNav').style.color="white";
+        document.getElementById('experienceNav').style.textDecoration="none";
+    }else{
+       
+        document.getElementById('skills').style.display="none";
+        document.getElementById('education').style.display="none";
+        document.getElementById('experience').style.display="block";
+
+        document.getElementById('skillsNav').style.color="white";
+        document.getElementById('skillsNav').style.textDecoration="none";
+
+
+        document.getElementById('educationNav').style.color="white";
+        document.getElementById('educationNav').style.textDecoration="none";
+
+        document.getElementById('experienceNav').style.color="pink";
+        document.getElementById('experienceNav').style.textDecoration="underline";
+
+    }
+}
